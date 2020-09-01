@@ -17,10 +17,10 @@ public class P12 extends Pane
         FileInputStream inputstream = new FileInputStream("src/panes/simpsons.gif");
         Image image = new Image(inputstream);
         ImageView imageView = new ImageView(image);
-        imageView.setX(50);
-        imageView.setY(25);
-        imageView.setFitHeight(50);
-        imageView.setFitWidth(50);
+        imageView.setX(240);
+        imageView.setY(166);
+        imageView.setFitHeight(166);
+        imageView.setFitWidth(240);
         imageView.setPreserveRatio(true);
         Group root = new Group(imageView);
         getChildren().add(root);
