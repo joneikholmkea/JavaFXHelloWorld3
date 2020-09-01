@@ -1,21 +1,20 @@
 package panes;
 
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class P21 extends Pane {
     public P21() {
+        String currentDir = System.getProperty("user.dir");
         FileInputStream file = null;
         try {
-            file = new FileInputStream("UncleBen.jpg");
+            file = new FileInputStream( "C:\\Users\\user\\IdeaProjects\\Sem3\\JavaFXHelloWorld3\\src\\panes\\uncleben.jpg");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
