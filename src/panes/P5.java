@@ -30,12 +30,16 @@ import java.util.Random;
 public class P5 extends Pane {
 
 
-    VBox vbox = new VBox(8);
 
     public P5()
     {
 
-        setMaxSize(240, 166);
+
+        VBox vbox = new VBox();
+
+
+        vbox.setMaxSize(240, 166);
+        vbox.setMinSize(240, 166);
 
 
         Button button = new Button("Click");
@@ -66,7 +70,9 @@ public class P5 extends Pane {
                     //   });
 
                     //getChildren().addAll(button, vbox);
-                getChildren().addAll(sphere1);
+
+                vbox.getChildren().add(sphere1);
+                getChildren().addAll(vbox);
 
 
 
