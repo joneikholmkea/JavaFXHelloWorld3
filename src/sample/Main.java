@@ -4,21 +4,20 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import panes.P1;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        VBox vBox = new VBox();
-        Button button = new Button("press");
-        vBox.getChildren().addAll(button);
-        button.setOnAction(e -> {
-            button.setText("you rock! Even if using Windows");
-        });
+        FlowPane flowPane = new FlowPane();
+        P1 p1 = new P1();
+        flowPane.getChildren().add(p1);
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(vBox, 300, 275));
+        primaryStage.setScene(new Scene(flowPane, 1000, 1175));
         primaryStage.show();
     }
 
