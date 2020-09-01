@@ -3,6 +3,8 @@ package panes;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -21,13 +23,17 @@ public class P13 extends Pane {
         ImageView imw = new ImageView(cow);
         Label label = new Label("P13");
         imw.setPreserveRatio(true);
+        imw.setOnMouseClicked(e -> {
+            label.setText("Sorry i'll be quiet..");
+            label.setFont(new Font(14));
+        });;
         Group root = new Group(imw);
-        Button button = new Button("Press Me!");
-        button.setOnAction(e -> {
+        Button button1 = new Button("Talk");
+        button1.setOnAction(e -> {
             label.setText("MOO!");
-            label.setFont(new Font(100));
+            label.setFont(new Font(50));
         });
-        box.getChildren().addAll(label, root, button);
+        box.getChildren().addAll(label, root, button1);
         getChildren().addAll(box);
     }
 
