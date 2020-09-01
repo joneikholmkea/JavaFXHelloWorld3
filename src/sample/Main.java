@@ -15,7 +15,7 @@ public class Main extends Application {
         Button button = new Button("press");
         vBox.getChildren().addAll(button);
         button.setOnAction(e -> {
-            button.setText("you rock!");
+            button.setText("you rock! Even if using Windows");
         });
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(vBox, 300, 275));
