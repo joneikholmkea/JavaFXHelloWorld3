@@ -3,20 +3,23 @@ package sample;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
-import javafx.stage.Stage;
-import panes.P20;
+
+import java.util.List;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        MyClassLoader classLoader = new MyClassLoader();
+        List<Pane> panes = classLoader.dynamicLoad();
         FlowPane flowPane = new FlowPane();
-        P20 p20 = new P20();
-        flowPane.getChildren().add(p20);
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(flowPane, 240, 166));
+
+        flowPane.getChildren().addAll(panes);
+        primaryStage.setTitle("Dat19A Distributed Programming");
+        primaryStage.setScene(new Scene(flowPane, 1200, 1000));
         primaryStage.show();
     }
+
 
 
     public static void main(String[] args) {
