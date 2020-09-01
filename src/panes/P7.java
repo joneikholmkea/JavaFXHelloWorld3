@@ -21,16 +21,17 @@ public class P7 extends Pane {
 
     public P7(){
         setStyle("-fx-background-color: #0467A9");
+
         GridPane pane = new GridPane();
         pane.setGridLinesVisible(true);
-        pane.setPrefSize(240, 166);
+        pane.setMaxSize(240, 166);
 
         Circle circle = new Circle(20,20,20,Color.BLACK);
 
         Button button = new Button("Click Me");
         button.setPrefWidth(240);
         button.setOnAction(event -> {
-            circle.setCenterX(50);
+            circle.setRadius(circle.getRadius() + 10);
         });
 
         //import image and add image;
