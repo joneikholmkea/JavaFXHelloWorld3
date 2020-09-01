@@ -19,10 +19,8 @@ public class P18 extends Pane {
         FileInputStream file = new FileInputStream("src/panes/jone.jpeg");
         Image img = new Image(file);
         ImageView view = new ImageView(img);
-        view.setX(50);
-        view.setY(25);
-        view.setFitHeight(100);
-        view.setFitWidth(100);
+        view.setFitHeight(166);
+        view.setFitWidth(240);
         view.setPreserveRatio(true);
         Button button = new Button();
         button.setGraphic(view);
