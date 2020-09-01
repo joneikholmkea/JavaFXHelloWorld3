@@ -16,13 +16,11 @@ public class P14 extends Pane {
 
 
     //Constructor for the pane object.
-    public P14() throws FileNotFoundException {
+    public P14() {
+        Rectangle rect = new Rectangle(240,166);
+        rect.setVisible(true);
         Button buttonL = new Button("Left");
         Button buttonR = new Button("Right");
-        //FileInputStream inputStream = new FileInputStream("panes/YKcP.gif");
-        //Image image = new Image(inputStream);
-        //
-        //ImageView imageView = new ImageView(image);
         Circle circle = new Circle();
         circle.setCenterX(120);
         circle.setCenterY(83);
@@ -32,7 +30,6 @@ public class P14 extends Pane {
                         circle.setRadius(radius += 10.0);
                     } else if (radius == 80) {
                         circle.setVisible(false);
-                        //imageView.getImage();
                     }
             });
 
@@ -45,11 +42,6 @@ public class P14 extends Pane {
         buttonR.setLayoutX(190);
         getChildren().addAll(buttonL, buttonR, circle);
 
-
-       // Image image = new Image("");
-    }
-
-    public static void main(String[] args) {
 
     }
 }
