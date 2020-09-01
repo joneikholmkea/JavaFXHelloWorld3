@@ -29,7 +29,6 @@ public class P13 extends Pane {
         });
         box.getChildren().addAll(label, root, button);
         getChildren().addAll(box);
-
     }
 
 }
