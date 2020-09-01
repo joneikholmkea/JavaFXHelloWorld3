@@ -16,7 +16,6 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(flowPane, 240, 166));
         primaryStage.show();
-
     }
 
 
