@@ -27,7 +27,7 @@ public class P1 extends Pane {
             path.getElements().add (new MoveTo(0f, 50f));
             path.getElements().add (new CubicCurveTo (40f, 10f, 390f, 240f, 1904, 50f));
 
-            pt.setDuration(Duration.millis(10000));
+            pt.setDuration(Duration.millis(20000));
             pt.setNode(iv);
             pt.setPath(path);
             pt.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
