@@ -24,7 +24,7 @@ public class P6 extends Pane {
 
     public P6() throws IOException {
         setMaxSize(240,166);
-        Label label = new Label("Down touch the Creeper!!!!");
+        Label label = new Label("Don't touch the Creeper!!!!");
         label.setStyle("-fx-text-fill: RED");
         Pane pane = new Pane();
         pane.setMinSize(240, 166);
@@ -56,15 +56,7 @@ public class P6 extends Pane {
                     label.setText("RUN");
                     rotate.play();
                     aBoolean = true;
-
-                    if(aBoolean == true);
             });
-
-
-
-
-
-
 
         pane.getChildren().addAll(iv,label);
         getChildren().add(pane);

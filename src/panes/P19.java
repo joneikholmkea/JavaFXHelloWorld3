@@ -1,4 +1,4 @@
-package P19;
+package panes;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
