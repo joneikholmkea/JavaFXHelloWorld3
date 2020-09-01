@@ -25,6 +25,5 @@ public class P20 extends Pane {
         label.setLayoutX(20);
         label.setStyle("-fx-font-size: 30pt; -fx-font-weight: bold;");
         vBox.getChildren().addAll(iv, label);
-    //idk
     }
 }
