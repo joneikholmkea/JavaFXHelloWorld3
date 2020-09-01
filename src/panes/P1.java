@@ -24,13 +24,14 @@ public class P1 extends Pane {
             rt.setNode(iv);
             PathTransition pt = new PathTransition();
             Path path = new Path();
-            path.getElements().add (new MoveTo(0f, 50f));
-            path.getElements().add (new CubicCurveTo (40f, 10f, 390f, 240f, 1904, 50f));
+            path.getElements().add (new MoveTo(0f, 1f));
+            path.getElements().add (new CubicCurveTo (0f, 0f, 390f, 240f, 200, 50f));
 
-            pt.setDuration(Duration.millis(20000));
+            pt.setDuration(Duration.millis(2000));
             pt.setNode(iv);
             pt.setPath(path);
             pt.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
+            pt.setCycleCount(Animation.INDEFINITE);
             pt.setAutoReverse(true);
 
             pt.play();
