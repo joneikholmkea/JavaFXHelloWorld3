@@ -33,7 +33,7 @@ public class P2 extends Pane {
 
         // Setting up light effect
         Light.Point light = new Light.Point();
-        light.setColor(Color.GRAY);
+        light.setColor(Color.YELLOW);
         light.setX(70);
         light.setY(55);
         light.setZ(45);

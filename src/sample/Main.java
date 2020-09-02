@@ -15,6 +15,7 @@ public class Main extends Application {
         MyClassLoader classLoader = new MyClassLoader();
         List<Pane> panes = classLoader.dynamicLoad();
         FlowPane flowPane = new FlowPane();
+
         flowPane.getChildren().addAll(panes);
         primaryStage.setTitle("Dat19A Distributed Programming");
         primaryStage.setScene(new Scene(flowPane, 1200, 1000));
